@@ -1,0 +1,11 @@
+Redirect 301 /ethical-power.html http://www.ethicalswitch.com/ethical-power
+Redirect 301 /pollinate-water.html http://www.ethicalswitch.com/project-pollinate-water
+Redirect 301 /portal-project.html http://www.ethicalswitch.com/project-portal-project
+Redirect 301 /welcome-pack-project.html http://www.ethicalswitch.com/project-welcome-pack
+Redirect 301 /powershop-faqs.html http://www.ethicalswitch.com/faqs
+Redirect 301 /privacy-policy.html http://www.ethicalswitch.com/privacy-policy
+Redirect 301 /terms.html http://www.ethicalswitch.com/terms-and-conditions
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
